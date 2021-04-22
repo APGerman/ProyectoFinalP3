@@ -42,10 +42,10 @@ def manos():
         
 
 
-b1=tk.Button(window,text="Entrenamiento de cara",font=("Algerian",20),bg='green',fg='white',command=entrenar)
+b1=tk.Button(window,text="Entrenamiento de rostro",font=("Algerian",20),bg='green',fg='white',command=entrenar)
 b1.grid(column=0, row=4)
 
-b2=tk.Button(window,text="Nuevo Rostro",font=("Algerian",20),bg='orange',fg='red',command=NuevoRostro)
+b2=tk.Button(window,text="Nuevo rostro",font=("Algerian",20),bg='orange',fg='red',command=NuevoRostro)
 b2.grid(column=1, row=4)
 
 b3=tk.Button(window,text="Detectar rostro",font=("Algerian",20),bg='blue',fg='white',command=Reconocer)
