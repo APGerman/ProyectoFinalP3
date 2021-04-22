@@ -25,8 +25,6 @@ def entrenar():
     else:
         messagebox.showinfo('Result','No existen rostros registrados')
         
-
-
 def NuevoRostro():
     if (t1.get() == ""):
         messagebox.showinfo('Result','Por favor digite un nombre')
@@ -37,6 +35,10 @@ def Reconocer():
         Rec.Reconocimiento()
     else:
         messagebox.showinfo('Result','Por favor primero entrene el modelo')
+
+def manos():
+    messagebox.showinfo('Result','Presione (i) para que se le muestre un cuadro donde se hara el reconocimiento de gestos')
+    gestos.gestos_mano()
         
 
 
@@ -49,7 +51,7 @@ b2.grid(column=1, row=4)
 b3=tk.Button(window,text="Detectar rostro",font=("Algerian",20),bg='blue',fg='white',command=Reconocer)
 b3.grid(column=2, row=4)
 
-b4=tk.Button(window,text="Reconocimiento de gestos",font=("Algerian",20),bg='red',fg='white',command=gestos.gestos_mano    )
+b4=tk.Button(window,text="Reconocimiento de gestos",font=("Algerian",20),bg='red',fg='white',command=manos)
 b4.grid(column=1, row=8, pady=(20))
 
 
